@@ -6,12 +6,6 @@
 
 # Welcome to the cState configuration file!
 #
-# If you are using an earlier version, or one
-# in the future, such as v8.0 you may see errors
-# pop up when deploying a cState website.
-#
-# Now, onto the fun part.
-#
 # Hugo is used for building the status page,
 # so this file can be used to change how
 # your status page should behave or look.
@@ -43,7 +37,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Dogsbody Technology Status Page
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +91,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://dogsbodytech.github.io/status_page_cstate
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -182,8 +176,8 @@ params:
   #
   # dateFormat Default: "January 2, 2006 at 3:04 PM"
   # shortDateFormat Default: "15:04 — Jan 2"
-  dateFormat: January 2, 2006 at 3:04 PM UTC
-  shortDateFormat: 15:04 UTC — Jan 2
+  dateFormat: 02 January 2006 at 15:04 UTC
+  shortDateFormat: 02 Jan — 15:04 UTC
 
   # Should relative time (x min ago) be used?
   #
@@ -208,7 +202,7 @@ params:
   #
   # Default: `true`
   # BOOLEAN; `true`, `false`
-  useRelativeTime: true
+  useRelativeTime: false
  
   # If enabled, doesn't show seconds on relative times.
   #
@@ -242,7 +236,7 @@ params:
   #
   # Default: `yearly`
   # STRING; `monthly`, `yearly`, `none`
-  incidentHistoryFormat: "yearly"
+  incidentHistoryFormat: "none"
 
   # Should incident history be hidden?
   #
@@ -333,7 +327,7 @@ params:
   # disrupted: "#cc4400"
   # down: "#e60000"
   # notice: "#24478f"
-  brand: "#0a0c0f"
+  brand: "#fff"
   ok: "#008000"
   disrupted: "#cc4400"
   down: "#e60000"
@@ -362,7 +356,7 @@ params:
   #
   # Default: `white`
   # STRING; `white`, `black`, or nothing
-  headerTextColor: white
+  headerTextColor: #002d56
 
   # Google Analytics tracking code
   #
@@ -397,6 +391,7 @@ outputs:
     - html
     - json
     - rss
+    - svg
   home:
     - html
     - json

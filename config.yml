@@ -154,33 +154,33 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: wordpress_hosting
-      displayName: WordPress Hosting
+    - name: WordPress Hosting
+      #displayName: WordPress Hosting
       category: Hosting
       description: Customers on our WordPress only hosting platform
       #link: https://www.dogsbody.com/linux-managed-services/hosting/optimised-wordpress-hosting/
-    - name: cpanel_hosting
-      displayName: cPanel Hosting
+    - name: cPanel Hosting
+      #displayName: cPanel Hosting
       category: Hosting
       description: Customers on our cPanel hosting platform
       #link: https://www.dogsbody.com/linux-managed-services/hosting/cpanel-hosting/
-    - name: dns_domain_names
-      displayName: DNS & Domain Names
+    - name: DNS & Domain Names
+      #displayName: DNS & Domain Names
       category: Hosting
       description: Customers on our WordPress only hosting platform
       #link: https://www.dogsbody.com/linux-managed-services/hosting/domain-names-primary-dns/
-    - name: support_via_email
-      displayName: Support via Email
+    - name: Support via Email
+      #displayName: Support via Email
       category: Support
       description: Issues relating to customer support via E-mail
       #link: https://www.dogsbody.com/in-life-support/
-    - name: support_via_phone
-      displayName: Support via Phone
+    - name: Support via Phone
+      #displayName: Support via Phone
       category: Support
       description: Issues relating to customer support via Telephone
       #link: https://www.dogsbody.com/in-life-support/
-    - name: support_via_slack
-      displayName: Support via Slack
+    - name: Support via Slack
+      #displayName: Support via Slack
       category: Support
       description: Issues relating to customer support via Slack
       #link: https://www.dogsbody.com/in-life-support/

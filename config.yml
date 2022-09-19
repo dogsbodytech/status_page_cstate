@@ -137,12 +137,14 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
-    - name: Uncategorized
-      untitled: true
+    - name: Hosting
+      #description: Dogsbody Technology Hosting Services
+      closed: false
+      untitled: false
+    - name: Support
+      #description: Dogsbody Technology Support Services
+      closed: false
+      untitled: false
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -152,20 +154,36 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    - name: wordpress_hosting
+      displayName: WordPress Hosting
+      category: Hosting
+      description: Customers on our WordPress only hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/optimised-wordpress-hosting/
+    - name: cpanel_hosting
+      displayName: cPanel Hosting
+      category: Hosting
+      description: Customers on our cPanel hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/cpanel-hosting/
+    - name: dns_domain_names
+      displayName: DNS & Domain Names
+      category: Hosting
+      description: Customers on our WordPress only hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/domain-names-primary-dns/
+    - name: support_via_email
+      displayName: Support via Email
+      category: Support
+      description: Issues relating to customer support via E-mail
+      #link: https://www.dogsbody.com/in-life-support/
+    - name: support_via_phone
+      displayName: Support via Phone
+      category: Support
+      description: Issues relating to customer support via Telephone
+      #link: https://www.dogsbody.com/in-life-support/
+    - name: support_via_slack
+      displayName: Support via Slack
+      category: Support
+      description: Issues relating to customer support via Slack
+      #link: https://www.dogsbody.com/in-life-support/
 
   # What date format to use?
   #

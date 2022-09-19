@@ -91,7 +91,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://dogsbodytech.github.io/status_page_cstate
+baseURL: https://newstatus.dogsbody.com
 
 # For features like Last modified, you
 # need to use a Git repository. If you

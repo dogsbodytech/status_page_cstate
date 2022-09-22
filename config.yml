@@ -141,6 +141,10 @@ params:
       #description: Dogsbody Technology Hosting Services
       closed: false
       untitled: false
+    - name: Old Hosting
+      #description: Old Hosting Services no longer supported
+      closed: true
+      untitled: true
     - name: Support
       #description: Dogsbody Technology Support Services
       closed: false
@@ -169,6 +173,21 @@ params:
       category: Hosting
       description: Customers on our WordPress only hosting platform
       #link: https://www.dogsbody.com/linux-managed-services/hosting/domain-names-primary-dns/
+    - name: LAMP Hosting
+      #displayName: WordPress Hosting
+      category: Old Hosting
+      description: Customers on our LAMP hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/
+    - name: Yellow
+      #displayName: Yellow
+      category: Old Hosting
+      description: Customers on our Yellow hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/
+    - name: Orange
+      #displayName: Orange
+      category: Old Hosting
+      description: Customers on our Orange hosting platform
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/
     - name: Support via Email
       #displayName: Support via Email
       category: Support

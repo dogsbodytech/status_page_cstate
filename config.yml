@@ -137,15 +137,15 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: Hosting
+    - name: "Hosting"
       #description: Dogsbody Technology Hosting Services
       closed: false
       untitled: false
-    - name: Old Hosting
+    - name: "Old Hosting"
       #description: Old Hosting Services no longer supported
       closed: true
       untitled: true
-    - name: Support
+    - name: "Support"
       #description: Dogsbody Technology Support Services
       closed: false
       untitled: false
@@ -158,50 +158,50 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: WordPress Hosting
+    - name: "WordPress Hosting"
       #displayName: WordPress Hosting
-      category: Hosting
-      description: Customers on our WordPress only hosting platform
+      category: "Hosting"
+      description: "Customers on our WordPress only hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/optimised-wordpress-hosting/
-    - name: cPanel Hosting
+    - name: "cPanel Hosting"
       #displayName: cPanel Hosting
-      category: Hosting
-      description: Customers on our cPanel hosting platform
+      category: "Hosting"
+      description: "Customers on our cPanel hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/cpanel-hosting/
-    - name: DNS & Domain Names
+    - name: "DNS & Domain Names"
       #displayName: DNS & Domain Names
-      category: Hosting
-      description: Customers on our WordPress only hosting platform
+      category: "Hosting"
+      description: "Customers on our WordPress only hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/domain-names-primary-dns/
-    - name: LAMP Hosting
+    - name: "LAMP Hosting"
       #displayName: WordPress Hosting
-      category: Old Hosting
-      description: Customers on our LAMP hosting platform
+      category: "Old Hosting"
+      description: "Customers on our LAMP hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/
-    - name: Yellow
+    - name: "Yellow"
       #displayName: Yellow
-      category: Old Hosting
-      description: Customers on our Yellow hosting platform
+      category: "Old Hosting"
+      description: "Customers on our Yellow hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/
-    - name: Orange
+    - name: "Orange"
       #displayName: Orange
-      category: Old Hosting
-      description: Customers on our Orange hosting platform
+      category: "Old Hosting"
+      description: "Customers on our Orange hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/
-    - name: Support via Email
+    - name: "Support via Email"
       #displayName: Support via Email
-      category: Support
-      description: Issues relating to customer support via E-mail
+      category: "Support"
+      description: "Issues relating to customer support via E-mail"
       #link: https://www.dogsbody.com/in-life-support/
-    - name: Support via Phone
+    - name: "Support via Phone"
       #displayName: Support via Phone
-      category: Support
-      description: Issues relating to customer support via Telephone
+      category: "Support"
+      description: "Issues relating to customer support via Telephone"
       #link: https://www.dogsbody.com/in-life-support/
-    - name: Support via Slack
+    - name: "Support via Slack"
       #displayName: Support via Slack
-      category: Support
-      description: Issues relating to customer support via Slack
+      category: "Support"
+      description: "Issues relating to customer support via Slack"
       #link: https://www.dogsbody.com/in-life-support/
 
   # What date format to use?
@@ -214,7 +214,7 @@ params:
   # dateFormat Default: "January 2, 2006 at 3:04 PM"
   # shortDateFormat Default: "15:04 — Jan 2"
   dateFormat: 02 January 2006 at 15:04 UTC
-  shortDateFormat: 02 Jan — 15:04 UTC
+  shortDateFormat: 02 Jan at 15:04 UTC
 
   # Should relative time (x min ago) be used?
   #

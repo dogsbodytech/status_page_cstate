@@ -30,18 +30,33 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   DESTFILE="$DESTDIR/$FILENAME"
   echo "Processing $FILENAME file..."; 
   cp "$SOURCEFILE" "$DESTFILE"
-  sed -i 's/^  - wordpress_hosting$/  - WordPress Hosting/' $DESTFILE || echo ERROR
-  sed -i 's/^  - cpanel_hosting$/  - cPanel Hosting/' $DESTFILE || echo ERROR
-  sed -i 's/^  - dns_domain_names$/  - DNS & Domain Names/' $DESTFILE || echo ERROR
-  sed -i 's/^  - lamp_hosting$/  - LAMP Hosting/' $DESTFILE || echo ERROR
-  sed -i 's/^  - orange$/  - Orange/' $DESTFILE || echo ERROR
-  sed -i 's/^  - yellow$/  - Yellow/' $DESTFILE || echo ERROR
-  sed -i 's/^  - support_via_email$/  - Support via Email/' $DESTFILE || echo ERROR
-  sed -i 's/^  - support_via_phone$/  - Support via Phone/' $DESTFILE || echo ERROR
-  sed -i 's/^  - support_via_slack$/  - Support via Slack/' $DESTFILE  || echo ERROR
-
   yq -i -e -f=process '.section = "issue"' "$DESTFILE"
-  yq -i -e -f=process '.ResolvedWhen = "2014-07-11T11:26:00"' "$DESTFILE"
+  yq -i -e -f=process '(.severity | select(. == "major-outage")) = "down"' "$DESTFILE"
+  yq -i -e -f=process '(.severity | select(. == "partial-outage")) = "disrupted"' "$DESTFILE"
+  yq -i -e -f=process '(.severity | select(. == "degraded-performance")) = "disrupted"' "$DESTFILE"
+  yq -i -e -f=process '(.severity | select(. == "under-maintenance")) = "notice"' "$DESTFILE"
+  yq -i -e -f=process '.affected = .affectedsystems | del(.affectedsystems)' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "wordpress_hosting")) = "WordPress Hosting"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "cpanel_hosting")) = "cPanel Hosting"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "dns_domain_names")) = "DNS & Domain Names"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "lamp_hosting")) = "LAMP Hosting"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "orange")) = "Orange"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "yellow")) = "Yellow"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "support_via_email")) = "Support via Email"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "support_via_phone")) = "Support via Phone"' "$DESTFILE"
+  yq -i -e -f=process '(.affected[] | select(. == "support_via_slack")) = "Support via Slack"' "$DESTFILE"
+  yq -i -e -f=process '.aliases += [ "/incidents/" + .id ]' "$DESTFILE"
+  yq -i -e -f=process '.stub = .id | del(.id)' "$DESTFILE"
 
+  # Why aren't stubs working?
+
+  # Are timezones working OK?  Certainly not when using `track` shortcode
+
+  yq -i -e -f=process '.ResolvedWhen = .date' "$DESTFILE"
+  # .ResolvedWhen should be set to `scheduled` + `duration` if scheduled & duration are set
+
+  sed -i 's|<br /><br />|\n\n|g' $DESTFILE
+  sed -i 's/^::: update \(.*\) | \(.*\)$/***\1*** {{< track "\2" >}}/g' $DESTFILE
+  sed -i 's/^:::$//g' $DESTFILE
 done
 

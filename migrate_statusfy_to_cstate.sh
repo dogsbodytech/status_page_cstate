@@ -46,11 +46,8 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   yq -i -e -f=process '(.affected[] | select(. == "support_via_phone")) = "Support via Phone"' "$DESTFILE"
   yq -i -e -f=process '(.affected[] | select(. == "support_via_slack")) = "Support via Slack"' "$DESTFILE"
   yq -i -e -f=process '.aliases += [ "/incidents/" + .id ]' "$DESTFILE"
-  yq -i -e -f=process '.stub = .id | del(.id)' "$DESTFILE"
-
-  # Why aren't stubs working?
-
-  # Are timezones working OK?  Certainly not when using `track` shortcode
+  yq -i -e -f=process '.slug = .id | del(.id)' "$DESTFILE"
+  #yq -i -e -f=process '.date |= tz("UTC")' "$DESTFILE" # convert to UTC??
 
   yq -i -e -f=process '.ResolvedWhen = .date' "$DESTFILE"
   # .ResolvedWhen should be set to `scheduled` + `duration` if scheduled & duration are set

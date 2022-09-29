@@ -47,10 +47,13 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   yq -i -e -f=process '(.affected[] | select(. == "support_via_slack")) = "Support via Slack"' "$DESTFILE"
   yq -i -e -f=process '.aliases += [ "/incidents/" + .id ]' "$DESTFILE"
   yq -i -e -f=process '.slug = .id | del(.id)' "$DESTFILE"
+
   #yq -i -e -f=process '.date |= tz("UTC")' "$DESTFILE" # convert to UTC??
 
-  yq -i -e -f=process '.ResolvedWhen = .date' "$DESTFILE"
+  #yq -i -e -f=process '.ResolvedWhen = .date' "$DESTFILE"
   # .ResolvedWhen should be set to `scheduled` + `duration` if scheduled & duration are set
+
+  yq -i -e -f=process '.ResolvedWhen = ((.scheduled + (.duration + "m")) // .date), del(.scheduled, .duration)' "$DESTFILE"
 
   sed -i 's|<br /><br />|\n\n|g' $DESTFILE
   sed -i 's/^::: update \(.*\) | \(.*\)$/***\1*** {{< track "\2" >}}/g' $DESTFILE

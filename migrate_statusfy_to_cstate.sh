@@ -31,6 +31,7 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   echo "Processing $FILENAME file..."; 
   cp "$SOURCEFILE" "$DESTFILE"
   yq -i -e -f=process '.section = "issue"' "$DESTFILE"
+  yq -i -e -f=process '.informational = "true"' "$DESTFILE"
   yq -i -e -f=process '(.severity | select(. == "major-outage")) = "down"' "$DESTFILE"
   yq -i -e -f=process '(.severity | select(. == "partial-outage")) = "disrupted"' "$DESTFILE"
   yq -i -e -f=process '(.severity | select(. == "degraded-performance")) = "disrupted"' "$DESTFILE"
@@ -47,14 +48,7 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   yq -i -e -f=process '(.affected[] | select(. == "support_via_slack")) = "Support via Slack"' "$DESTFILE"
   yq -i -e -f=process '.aliases += [ "/incidents/" + .id ]' "$DESTFILE"
   yq -i -e -f=process '.slug = .id | del(.id)' "$DESTFILE"
-
-  #yq -i -e -f=process '.date |= tz("UTC")' "$DESTFILE" # convert to UTC??
-
-  #yq -i -e -f=process '.ResolvedWhen = .date' "$DESTFILE"
-  # .ResolvedWhen should be set to `scheduled` + `duration` if scheduled & duration are set
-
-  yq -i -e -f=process '.ResolvedWhen = ((.scheduled + (.duration + "m")) // .date), del(.scheduled, .duration)' "$DESTFILE"
-
+  yq -i -e -f=process '.resolvedWhen = ((.scheduled + (.duration + "m")) // .date), del(.scheduled, .duration)' "$DESTFILE"
   sed -i 's|<br /><br />|\n\n|g' $DESTFILE
   sed -i 's/^::: update \(.*\) | \(.*\)$/***\1*** {{< track "\2" >}}/g' $DESTFILE
   sed -i 's/^:::$//g' $DESTFILE

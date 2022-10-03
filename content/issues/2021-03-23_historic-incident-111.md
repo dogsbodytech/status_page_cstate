@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id111
+  - /incidents/id111
 slug: id111
 resolvedWhen: 2021-03-23T23:00:00Z
 ---

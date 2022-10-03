@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id71
+  - /incidents/id71
 slug: id71
 resolvedWhen: 2018-11-03T12:00:00Z
 ---

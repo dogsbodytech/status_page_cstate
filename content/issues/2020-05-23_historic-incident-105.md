@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id105
+  - /incidents/id105
 slug: id105
 resolvedWhen: 2020-05-23T05:46:00+00:00
 ---

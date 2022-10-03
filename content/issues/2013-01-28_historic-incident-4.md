@@ -10,6 +10,7 @@ affected:
   - Yellow
 aliases:
   - /incidents/id4
+  - /incidents/id4
 slug: id4
 resolvedWhen: 2013-01-28T11:27:00+00:00
 ---

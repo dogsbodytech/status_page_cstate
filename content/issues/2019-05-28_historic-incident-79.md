@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id79
+  - /incidents/id79
 slug: id79
 resolvedWhen: 2019-05-28T09:30:00+00:00
 ---

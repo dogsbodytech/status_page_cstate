@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id64
+  - /incidents/id64
 slug: id64
 resolvedWhen: 2018-05-24T23:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id27
+  - /incidents/id27
 slug: id27
 resolvedWhen: 2016-04-08T13:00:00Z
 ---

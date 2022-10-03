@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id26
+  - /incidents/id26
 slug: id26
 resolvedWhen: 2015-12-31T13:42:00+00:00
 ---

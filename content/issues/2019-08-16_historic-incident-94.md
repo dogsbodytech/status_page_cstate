@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id94
+  - /incidents/id94
 slug: id94
 resolvedWhen: 2019-08-17T11:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id16
+  - /incidents/id16
 slug: id16
 resolvedWhen: 2014-08-11T00:00:00Z
 ---

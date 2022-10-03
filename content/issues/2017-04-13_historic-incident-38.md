@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id38
+  - /incidents/id38
 slug: id38
 resolvedWhen: 2017-04-13T23:00:00Z
 ---

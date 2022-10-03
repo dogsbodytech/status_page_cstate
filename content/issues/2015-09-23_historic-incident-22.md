@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id22
+  - /incidents/id22
 slug: id22
 resolvedWhen: 2015-09-28T23:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id52
+  - /incidents/id52
 slug: id52
 resolvedWhen: 2017-12-25T00:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - Support via Phone
 aliases:
   - /incidents/id80
+  - /incidents/id80
 slug: id80
 resolvedWhen: 2019-05-28T09:30:00+00:00
 ---

@@ -10,6 +10,7 @@ affected:
   - cPanel Hosting
 aliases:
   - /incidents/id103
+  - /incidents/id103
 slug: id103
 resolvedWhen: 2020-04-27T15:11:00+00:00
 ---

@@ -10,6 +10,7 @@ affected:
   - cPanel Hosting
 aliases:
   - /incidents/id112
+  - /incidents/id112
 slug: id112
 resolvedWhen: 2021-04-13T15:56:00+00:00
 ---

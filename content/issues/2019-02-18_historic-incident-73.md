@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id73
+  - /incidents/id73
 slug: id73
 resolvedWhen: 2019-02-20T00:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id33
+  - /incidents/id33
 slug: id33
 resolvedWhen: 2017-01-15T00:00:00Z
 ---

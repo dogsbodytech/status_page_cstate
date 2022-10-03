@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id107
+  - /incidents/id107
 slug: id107
 resolvedWhen: 2020-07-09T16:45:00+00:00
 ---

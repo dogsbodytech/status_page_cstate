@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id31
+  - /incidents/id31
 slug: id31
 resolvedWhen: 2016-10-16T06:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id32
+  - /incidents/id32
 slug: id32
 resolvedWhen: 2016-10-27T00:00:00Z
 ---

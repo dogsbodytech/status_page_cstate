@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id30
+  - /incidents/id30
 slug: id30
 resolvedWhen: 2016-07-25T13:00:00Z
 ---

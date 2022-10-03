@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id45
+  - /incidents/id45
 slug: id45
 resolvedWhen: 2017-07-03T14:00:00Z
 ---

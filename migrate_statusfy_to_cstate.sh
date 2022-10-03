@@ -47,6 +47,7 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   yq -i -e -f=process '(.affected[] | select(. == "support_via_phone")) = "Support via Phone"' "$DESTFILE"
   yq -i -e -f=process '(.affected[] | select(. == "support_via_slack")) = "Support via Slack"' "$DESTFILE"
   yq -i -e -f=process '.aliases += [ "/incidents/" + .id ]' "$DESTFILE"
+  yq -i -e -f=process '.aliases += [ "/incidents/" + .id | downcase ]' "$DESTFILE"
   yq -i -e -f=process '.slug = .id | del(.id)' "$DESTFILE"
   yq -i -e -f=process '.resolvedWhen = ((.scheduled + (.duration + "m")) // .date), del(.scheduled, .duration)' "$DESTFILE"
   sed -i 's|<br /><br />|\n\n|g' $DESTFILE

@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id82
+  - /incidents/id82
 slug: id82
 resolvedWhen: 2019-05-29T12:15:00+00:00
 ---

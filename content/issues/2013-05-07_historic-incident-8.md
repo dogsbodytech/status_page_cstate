@@ -10,6 +10,7 @@ affected:
   - Yellow
 aliases:
   - /incidents/id8
+  - /incidents/id8
 slug: id8
 resolvedWhen: 2013-05-07T22:29:00+00:00
 ---

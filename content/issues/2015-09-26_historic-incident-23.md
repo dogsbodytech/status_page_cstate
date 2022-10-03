@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id23
+  - /incidents/id23
 slug: id23
 resolvedWhen: 2015-09-26T08:40:00+00:00
 ---

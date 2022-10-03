@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id62
+  - /incidents/id62
 slug: id62
 resolvedWhen: 2018-05-04T08:55:00+00:00
 ---

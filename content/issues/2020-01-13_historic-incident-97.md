@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id97
+  - /incidents/id97
 slug: id97
 resolvedWhen: 2020-01-16T09:00:00Z
 ---

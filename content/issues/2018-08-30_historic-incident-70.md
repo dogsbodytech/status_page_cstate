@@ -10,6 +10,7 @@ affected:
   - Support via Phone
 aliases:
   - /incidents/id70
+  - /incidents/id70
 slug: id70
 resolvedWhen: 2018-08-31T11:00:00Z
 ---

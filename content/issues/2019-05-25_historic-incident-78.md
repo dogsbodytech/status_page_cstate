@@ -10,6 +10,7 @@ affected:
   - cPanel Hosting
 aliases:
   - /incidents/id78
+  - /incidents/id78
 slug: id78
 resolvedWhen: 2019-05-26T23:00:00Z
 ---

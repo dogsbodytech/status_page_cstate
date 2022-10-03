@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id58
+  - /incidents/id58
 slug: id58
 resolvedWhen: 2018-02-25T13:00:00Z
 ---

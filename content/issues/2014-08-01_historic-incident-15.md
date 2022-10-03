@@ -10,6 +10,7 @@ affected:
   - Orange
 aliases:
   - /incidents/id15
+  - /incidents/id15
 slug: id15
 resolvedWhen: 2014-08-02T00:00:00Z
 ---

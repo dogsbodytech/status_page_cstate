@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id43
+  - /incidents/id43
 slug: id43
 resolvedWhen: 2017-06-21T00:00:00Z
 ---

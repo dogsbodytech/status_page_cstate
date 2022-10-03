@@ -10,6 +10,7 @@ affected:
   - cPanel Hosting
 aliases:
   - /incidents/id98
+  - /incidents/id98
 slug: id98
 resolvedWhen: 2020-01-16T09:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - Support via Slack
 aliases:
   - /incidents/id76
+  - /incidents/id76
 slug: id76
 resolvedWhen: 2019-04-05T01:55:00+00:00
 ---

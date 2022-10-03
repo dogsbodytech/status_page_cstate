@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id35
+  - /incidents/id35
 slug: id35
 resolvedWhen: 2017-03-08T05:47:00+00:00
 ---

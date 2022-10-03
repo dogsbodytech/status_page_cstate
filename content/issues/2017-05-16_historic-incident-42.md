@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id42
+  - /incidents/id42
 slug: id42
 resolvedWhen: 2017-05-16T14:32:00+00:00
 ---

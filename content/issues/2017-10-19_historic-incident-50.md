@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id50
+  - /incidents/id50
 slug: id50
 resolvedWhen: 2017-10-22T12:00:00Z
 ---

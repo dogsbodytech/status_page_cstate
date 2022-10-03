@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id60
+  - /incidents/id60
 slug: id60
 resolvedWhen: 2018-04-30T23:00:00Z
 ---

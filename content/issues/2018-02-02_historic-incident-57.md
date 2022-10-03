@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id57
+  - /incidents/id57
 slug: id57
 resolvedWhen: 2018-02-08T02:00:00Z
 ---

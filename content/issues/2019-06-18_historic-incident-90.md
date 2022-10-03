@@ -10,6 +10,7 @@ affected:
   - cPanel Hosting
 aliases:
   - /incidents/id90
+  - /incidents/id90
 slug: id90
 resolvedWhen: 2019-06-18T11:00:00Z
 ---

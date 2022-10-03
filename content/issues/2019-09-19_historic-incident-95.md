@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id95
+  - /incidents/id95
 slug: id95
 resolvedWhen: 2019-09-19T15:35:00+00:00
 ---

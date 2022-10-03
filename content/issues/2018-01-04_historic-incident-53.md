@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id53
+  - /incidents/id53
 slug: id53
 resolvedWhen: 2018-01-06T00:00:00Z
 ---

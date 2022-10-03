@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id6
+  - /incidents/id6
 slug: id6
 resolvedWhen: 2013-02-25T22:44:00+00:00
 ---

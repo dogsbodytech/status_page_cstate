@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id68
+  - /incidents/id68
 slug: id68
 resolvedWhen: 2018-07-02T12:40:00+00:00
 ---

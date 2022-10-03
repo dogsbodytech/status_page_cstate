@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id44
+  - /incidents/id44
 slug: id44
 resolvedWhen: 2017-06-21T00:00:00Z
 ---

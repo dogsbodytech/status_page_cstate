@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id21
+  - /incidents/id21
 slug: id21
 resolvedWhen: 2015-08-19T23:00:00Z
 ---

@@ -10,6 +10,7 @@ affected:
   - Support via Phone
 aliases:
   - /incidents/id91
+  - /incidents/id91
 slug: id91
 resolvedWhen: 2019-07-10T08:30:00+00:00
 ---

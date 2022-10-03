@@ -10,6 +10,7 @@ affected:
   - LAMP Hosting
 aliases:
   - /incidents/id25
+  - /incidents/id25
 slug: id25
 resolvedWhen: 2015-12-13T23:00:00Z
 ---

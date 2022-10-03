@@ -10,6 +10,7 @@ affected:
   - WordPress Hosting
 aliases:
   - /incidents/id106
+  - /incidents/id106
 slug: id106
 resolvedWhen: 2020-07-09T16:45:00+00:00
 ---

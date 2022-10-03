@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id110
+  - /incidents/id110
 slug: id110
 resolvedWhen: 2021-02-22T01:00:00+00:00
 ---

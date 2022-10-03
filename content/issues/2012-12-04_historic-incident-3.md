@@ -10,6 +10,7 @@ affected:
   - Yellow
 aliases:
   - /incidents/id3
+  - /incidents/id3
 slug: id3
 resolvedWhen: 2012-12-04T16:26:00+00:00
 ---

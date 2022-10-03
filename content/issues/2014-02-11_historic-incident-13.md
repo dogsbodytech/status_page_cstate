@@ -10,6 +10,7 @@ affected:
   - Orange
 aliases:
   - /incidents/id13
+  - /incidents/id13
 slug: id13
 resolvedWhen: 2014-02-11T13:20:00+00:00
 ---

@@ -10,6 +10,7 @@ affected:
   - Support via Slack
 aliases:
   - /incidents/id92
+  - /incidents/id92
 slug: id92
 resolvedWhen: 2019-07-29T14:53:00+00:00
 ---

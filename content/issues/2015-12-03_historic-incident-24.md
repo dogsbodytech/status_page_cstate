@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id24
+  - /incidents/id24
 slug: id24
 resolvedWhen: 2015-12-10T14:00:00Z
 ---

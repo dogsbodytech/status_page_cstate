@@ -10,6 +10,7 @@ affected:
   - Support via Email
 aliases:
   - /incidents/id47
+  - /incidents/id47
 slug: id47
 resolvedWhen: 2017-08-11T15:46:00+00:00
 ---

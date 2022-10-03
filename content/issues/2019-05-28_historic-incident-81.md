@@ -10,6 +10,7 @@ affected:
   - Support via Slack
 aliases:
   - /incidents/id81
+  - /incidents/id81
 slug: id81
 resolvedWhen: 2019-05-28T09:30:00+00:00
 ---

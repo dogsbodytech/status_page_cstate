@@ -1,0 +1,46 @@
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-redirects-file
+# https://docs.netlify.com/routing/redirects/redirect-options/
+
+# Redirect old URL's (from Cachet status site)
+/rss 			/feeds/incidents.en.xml
+/atom 			/feeds/incidents.en.atom
+/subscribe 		/
+/incident/:slug 	/incidents/id:slug
+
+# Redirect default subdomain
+https://dogsbodystatuspage.netlify.app/* 	https://status.dogsbody.com/:splat 301!
+
+# Redirect old URL's (from alerts.dogsbodytechnology.com)
+/post/157648619236/reboot-of-purple-server 			/incidents/id34;
+/post/155808801256/reboot-of-purple-server 			/incidents/id33;
+/post/152332581196/reboot-of-purple-server 			/incidents/id32;
+/post/149513789951/wordpress-sites-on-indigo-server 		/incidents/id31;
+/post/147744803656/php-upgrade-on-purple-server 		/incidents/id30;
+/post/145208390091/php-upgrade-on-purple-server 		/incidents/id29;
+/post/143895473691/php-upgrade-on-purple-server 		/incidents/id28;
+/post/142452977941/php-upgrade-on-purple-server 		/incidents/id27;
+/post/136335963041/support-email-issues 			/incidents/id26;
+/post/134860360331/php-upgrade-on-purple-server 		/incidents/id25;
+/post/134860121326/support-email-outage 			/incidents/id24;
+/post/129906197256/authentication-issues-on-purple 		/incidents/id23;
+/post/129710156391/php-upgrade-on-purple-server 		/incidents/id22;
+/post/126999774936/php-blueonyx-upgrade-on-purple-server 	/incidents/id21;
+/post/124566588621/php-upgrade-on-purple-server 		/incidents/id20;
+/post/105785746571/php-upgrade-on-purple-server 		/incidents/id19;
+/post/103399584891/planned-maintenance-to-purple-server 	/incidents/id18;
+/post/96440898806/planned-orange-outage 			/incidents/id17;
+/post/93577453199/php-upgrade-on-purple-server 			/incidents/id16;
+/post/93487072086/reboot-of-orange-and-purple-servers 		/incidents/id15;
+/post/91445947271/reboot-of-purple-server 			/incidents/id14;
+/post/76833869522/outage-of-services-on-orange-and-purple-servers 	/incidents/id13;
+/post/76832488895/planned-maintenance-on-orange-and-purple-servers 	/incidents/id12;
+/post/71462568815/migration-of-orange-dns 			/incidents/id11;
+/post/71461845887/email-ssl-issue-on-purple-and-orange 		/incidents/id10;
+/post/52897819127/email-delayed-for-users-of-yellow-server 	/incidents/id9;
+/post/49885043075/yellow-server-degraded 			/incidents/id8;
+/post/46872645599/purple-server-outage 				/incidents/id7;
+/post/44012698793/connectivity-to-purple-server 		/incidents/id6;
+/post/43521638255/disabling-ssh-access-to-all-servers 		/incidents/id5;
+/post/41736373848/yellow-reboot 				/incidents/id4;
+/post/37192055751/issue-with-receiving-email-on-yellow-server 	/incidents/id3;
+

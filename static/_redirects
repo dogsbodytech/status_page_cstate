@@ -3,11 +3,18 @@
 # https://developers.cloudflare.com/pages/platform/redirects/
 # https://docs.netlify.com/routing/redirects/
 
+# Old URL's (from Statusfy status site)
+#/calendars/scheduled.en.ics
+#/feeds/incidents.en.atom
+/feeds/incidents.en.xml 	/index.xml 	301
+/history 			/ 		301
+/history/* 			/ 		301
+
 # Old URL's (from Cachet status site)
-/rss 			/feeds/incidents.en.xml         301
-/atom 			/feeds/incidents.en.atom         301
-/subscribe 		/         301
-/incident/:slug 	/incidents/id:slug         301
+/rss 			/feeds/incidents.en.xml 	301
+/atom 			/feeds/incidents.en.atom 	301
+/subscribe 		/ 				301
+/incident/:slug 	/incidents/id:slug 		301
 
 # Redirect default subdomain
 https://status-page-cstate.pages.dev/* 		https://status.dogsbody.com/:splat 301!

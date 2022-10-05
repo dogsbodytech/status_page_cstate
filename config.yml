@@ -447,3 +447,7 @@ outputFormats:
   svg:
     isPlainText: true
     mediaType: image/svg+xml
+
+# Enable default robots.txt file
+enableRobotsTXT: true
+

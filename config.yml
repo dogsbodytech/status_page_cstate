@@ -451,3 +451,5 @@ outputFormats:
 # Enable default robots.txt file
 enableRobotsTXT: true
 
+# Enable Gitinfo to get the last modified date of pages from Git
+enableGitInfo: true

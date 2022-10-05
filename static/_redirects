@@ -17,7 +17,8 @@
 /incident/:slug 	/incidents/id:slug 		301
 
 # Redirect default subdomain
-https://status-page-cstate.pages.dev/* 		https://status.dogsbody.com/:splat 301!
+#Allowed in Netlify but not in Cloudflare pages
+#https://status-page-cstate.pages.dev/* 		https://status.dogsbody.com/:splat 301!
 
 # Old URL's (from alerts.dogsbodytechnology.com)
 /post/157648619236/reboot-of-purple-server 			/incidents/id34 	301

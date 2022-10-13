@@ -24,7 +24,7 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SOURCEDIR="$SCRIPTDIR/old_incidents/issues"
 DESTDIR="$SCRIPTDIR/content/issues"
 
-for SOURCEFILE in $SOURCEDIR/*.md; do
+for SOURCEFILE in "$SOURCEDIR"/*.md; do
   [ -e "$SOURCEFILE" ] || continue
   FILENAME=${SOURCEFILE##*/}
   DESTFILE="$DESTDIR/$FILENAME"
@@ -50,8 +50,8 @@ for SOURCEFILE in $SOURCEDIR/*.md; do
   yq -i -e -f=process '.aliases += [ "/incidents/" + .id | downcase ]' "$DESTFILE"
   yq -i -e -f=process '.slug = .id | del(.id)' "$DESTFILE"
   yq -i -e -f=process '.resolvedWhen = ((.scheduled + (.duration + "m")) // .date), del(.scheduled, .duration)' "$DESTFILE"
-  sed -i 's|<br /><br />|\n\n|g' $DESTFILE
-  sed -i 's/^::: update \(.*\) | \(.*\)$/***\1*** {{< track "\2" >}}/g' $DESTFILE
-  sed -i 's/^:::$//g' $DESTFILE
+  sed -i 's|<br /><br />|\n\n|g' "$DESTFILE"
+  sed -i 's/^::: update \(.*\) | \(.*\)$/***\1*** {{< track "\2" >}}/g' "$DESTFILE"
+  sed -i 's/^:::$//g' "$DESTFILE"
 done
 

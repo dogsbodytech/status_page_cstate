@@ -7,13 +7,6 @@
 # Notes: This script fails if there are more than 9 systems to select from
 #
 
-
-# Notes:  Requires `yq` from mikefarah. Install with `sudo snap install yq` on Ubuntu 22.04
-#         Yeah, I hard coded the source and destination directories in this script when I 
-#           should have used $1 & $2, I'm writing this for a one off migration. Sue me ;-)
-#         Files in the destination directory will be knowingly overwritten.
-#
-
 set -e
 set -u
 
@@ -24,14 +17,13 @@ hash date
 
 # Set some variables
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-#DESTDIR="$SCRIPTDIR/content/issues"
-SYSTEMS=("WordPress Hosting" "cPanel Hosting" "DNS & Domain Names" "Support via Email" "Support via Phone" "Support via Slack")
+DESTDIR="$SCRIPTDIR/content/issues"
+SYSTEMS=("WordPress Hosting" "cPanel Hosting" "DNS & Domain Names" "Support via Email" "Support via Phone" "Support via Slack") # See note above when changing
 SEVERITY=("notice" "disrupted" "down")
 
 # Some colour settings
 NC='\033[0m'             # Text Reset
 
-# Regular Colors
 #Black='\033[0;30m'   # Black
 Red='\033[0;31m'     # Red
 Green='\033[0;32m'   # Green
@@ -61,7 +53,6 @@ Purple='\033[0;35m'  # Purple
 #UCyan='\033[4;36m'   # Cyan
 #UWhite='\033[4;37m'  # White
 
-
 echo
 echo -e "                     ${Red}Create a status page issue${NC}"
 echo
@@ -70,7 +61,7 @@ echo -e "Hey, I'm clippy, let me help you create a status page..."
 NEWSLUG=$(apg -a 1 -n 1 -m 16 -x 16 -MLN)
 
 NEWSYSTEMS=""
-while [[ ! $NEWSYSTEMS =~ ^[0-9]+$ ]]; do           ############# TO IMPROVE
+while :; do
   echo 
   echo -e "${Yellow}Enter the numbers(s) of the system(s) that are/will be affected:${NC}"
   for (( I=0; I<${#SYSTEMS[@]}; I++ )); do
@@ -78,6 +69,14 @@ while [[ ! $NEWSYSTEMS =~ ^[0-9]+$ ]]; do           ############# TO IMPROVE
   done
   echo -e -n "${Purple}Systems: ${NC}"
   read -r NEWSYSTEMS
+  [[ $NEWSYSTEMS =~ ^[0-9]+$ ]] || { echo "Enter valid numbers"; continue; }
+  for ((I=0; I < ${#NEWSYSTEMS}; I++)); do
+    CHAR=${NEWSYSTEMS:I:1}
+    set +u
+    [[ -z ${SYSTEMS[$CHAR]} ]] && { echo "Error: ${CHAR} is not a valid number"; continue 2; }
+    set -u
+  done
+  break
 done
 
 NEWTITLE=""
@@ -112,13 +111,23 @@ while :; do
 done
 
 NEWDATE=""
-while [[ $NEWDATE == "" ]]; do                     ############# TO IMPROVE
+while :; do
   echo
   echo -e "${Yellow}Enter the date the issue starts/started:${NC}"
   echo -e " N.B. ${Red}This must be entered in the UTC timezone${NC}"
   echo -e "      The current time is: ${Green}$(date --utc --iso-8601=seconds)${NC}"
   echo -e -n "${Purple}Date: ${NC}"
-  read -r NEWDATE
+  read -r DATEIN
+  [[ $DATEIN == "" ]] && { echo "Enter a date"; continue; }
+  set +e
+  NEWDATE=$(date --utc --iso-8601=seconds -d "$DATEIN" 2> /dev/null)
+  set -e
+  if [[ $NEWDATE == "" ]]; then
+    echo "Enter a valid date"
+  else
+    echo "Using $NEWDATE"
+    break
+  fi
 done
 
 # Is this resolved?

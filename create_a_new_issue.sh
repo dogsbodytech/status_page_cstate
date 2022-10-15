@@ -130,9 +130,11 @@ while :; do
   fi
 done
 
-# Is this resolved?
-#Yes - ask for a date
-#No - Remind them to update it when it is
+#Is this scheduled maintenance?
+#Yes - set informational to true
+#Ask for a finished date
+# greate timedate URL?
+#set resolved true
 
 
 
@@ -148,14 +150,47 @@ for ((I=0; I < ${#NEWSYSTEMS}; I++)); do
   echo "  - ${SYSTEMS[$CHAR]}"
 done
 echo "severity: ${SEVERITY[$NEWSEVERITY]}"
+echo "resolved: false"
 echo "slug: $NEWSLUG"
 echo "section: issue"
 echo "---"
+echo SOME TEXT 
+echo
+echo "<-- remove this comment as required"
+echo "***Starting*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo 
+echo "<-- remove this comment as required"
+echo "***Complete*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo 
+echo "<-- remove this comment as required"
+echo "***Resolved*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo 
+echo "<-- remove this comment as required"
+echo "***Investigating*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo
+echo "<-- remove this comment as required"
+echo "***Update*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo
+echo "<-- remove this comment as required"
+echo "***Monitoring*** {{< track "2022-10-15T21:09:57+00:00" >}} We've identified the issue"
+echo "-->"
+echo 
 echo 
 
 
+echo
+echo
+echo
+echo "I've created FILE"
+echo "don't forget to change resolved to true"
 
-#date: 2022-08-17T21:00:00+00:00
+
+
 #resolved: true
 #informational: "true"
 #resolvedWhen: 2022-08-18T00:00:00Z

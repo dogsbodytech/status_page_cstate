@@ -134,7 +134,9 @@ done
 #Yes - set informational to true
 #Ask for a finished date
 # greate timedate URL?
-#set resolved true
+#set resolved true - no
+#set severity: notice
+# remind them to change the resolved and update the ticket when done
 
 
 

@@ -5,6 +5,7 @@
 
 # Disable /admin as we're no longer with Netlify
 /admin  / 301
+/admin/*  / 301
 
 # Old URL's (from Statusfy status site)
 #/calendars/scheduled.en.ics

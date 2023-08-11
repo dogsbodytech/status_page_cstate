@@ -3,10 +3,13 @@
 # https://developers.cloudflare.com/pages/platform/redirects/
 # https://docs.netlify.com/routing/redirects/
 
+# Disable /admin as we're no longer with Netlify
+/admin  / 301
+
 # Old URL's (from Statusfy status site)
 #/calendars/scheduled.en.ics
-#/feeds/incidents.en.atom
 /feeds/incidents.en.xml 	/index.xml 	301
+/feeds/incidents.en.atom  /index.xml 	301
 /history 			/ 		301
 /history/* 			/ 		301
 

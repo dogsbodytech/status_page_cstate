@@ -165,13 +165,18 @@ params:
       #link: https://www.dogsbody.com/linux-managed-services/hosting/optimised-wordpress-hosting/
     - name: "cPanel Hosting"
       #displayName: cPanel Hosting
-      category: "Hosting"
+      category: "Old Hosting"
       description: "Customers on our cPanel hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/cpanel-hosting/
+    - name: "Plesk Hosting"
+      #displayName: Plesk Hosting
+      category: "Hosting"
+      description: "Customers on our Plesk hosting platform"
+      #link: https://www.dogsbody.com/linux-managed-services/hosting/plesk-hosting/
     - name: "DNS & Domain Names"
       #displayName: DNS & Domain Names
-      category: "Hosting"
-      description: "Customers on our WordPress only hosting platform"
+      category: "Old Hosting"
+      description: "Customers using our DNS or Domain Name services"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/domain-names-primary-dns/
     - name: "LAMP Hosting"
       #displayName: WordPress Hosting

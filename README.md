@@ -1,5 +1,7 @@
 # Dogsbody Technology Status Page
-Using the [Hugo framework](https://gohugo.io/) with the [cstate theme](https://github.com/cstate/cstate).
+This repository contains the source for [the Dogsbody Technology public status page](https://status.dogsbody.com).
+
+It is built with [Hugo](https://gohugo.io/) using the [cstate](https://github.com/cstate/cstate) theme, which is included as a git submodule.
 
 Commits to this repo are automatically built by Cloudflare and deployed immediately to the [Dogsbody Technology Status Page](https://status.dogsbody.com) which is hosted on Cloudflare Pages.
 
@@ -17,15 +19,17 @@ Details of the file format can be found on [the cstate wiki](https://github.com/
 ## Running locally
 The site can be run locally but will require Hugo to be installed. 
 
-Install Hugo from the [latest release](https://github.com/gohugoio/hugo/releases). Install the `.deb` file for the easiest install. 
-
 Move to the root of the repo you downloaded and run `hugo server --disableFastRender`. 
 
 Access the site in your browser at: http://localhost:1313
 
 ## Updating cstate template
-`git submodule foreach git pull origin master`
 
-Test locally and commit back to github
-
+```bash
+git submodule update --remote --merge
+# Test locally and commit back to github
+git status
+git add themes/cstate
+git commit -m "Update cstate theme"
+```
 

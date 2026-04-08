@@ -160,7 +160,7 @@ params:
   systems:
     - name: "WordPress Hosting"
       #displayName: WordPress Hosting
-      category: "Hosting"
+      category: "Old Hosting"
       description: "Customers on our WordPress only hosting platform"
       #link: https://www.dogsbody.com/linux-managed-services/hosting/optimised-wordpress-hosting/
     - name: "cPanel Hosting"
@@ -456,5 +456,3 @@ outputFormats:
 # Enable default robots.txt file
 enableRobotsTXT: true
 
-# Enable Gitinfo to get the last modified date of pages from Git
-enableGitInfo: true

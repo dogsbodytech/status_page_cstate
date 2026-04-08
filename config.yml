@@ -398,7 +398,7 @@ params:
   #
   # Default: `white`
   # STRING; `white`, `black`, or nothing
-  headerTextColor: #002d56
+  headerTextColor: "#002d56"
 
   # Google Analytics tracking code
   #
@@ -413,7 +413,7 @@ params:
   # the value to the default:
   #
   # Default: UA-00000000-1
-  googleAnalytics: UA-00000000-1
+  #googleAnalytics: UA-00000000-1
 
   # Enable Custom HTML
   enableCustomHTML: true

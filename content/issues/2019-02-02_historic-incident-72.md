@@ -15,7 +15,12 @@ slug: id72
 resolvedWhen: 2019-02-02T22:30:00+00:00
 ---
 
-The SSL certificates used by the server have been updated in the following contexts...<br />- Control Panel<br />- Webmail<br />- SMTP<br />- IMAP<br />- POP3
+The SSL certificates used by the server have been updated in the following contexts...
+- Control Panel
+- Webmail
+- SMTP
+- IMAP
+- POP3
 
 ... while this should not cause any issues we have had reports in the past of old email clients that required restarting to accept the new certificate.
 

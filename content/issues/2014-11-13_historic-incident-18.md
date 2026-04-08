@@ -21,7 +21,9 @@ We are not anticipating any downtime however some services will be restarted whi
 
 Planned work…
 
-*    Upgrade OS to (security patches have already been installed)<br />*    Upgrade PHP from v5.4.31 to v5.4.33<br />*    Roll out stronger default encryption settings for HTTPS as well as SSL connections used for FTP and email (SMTP, IMAP & POP3).
+*    Upgrade OS to (security patches have already been installed)
+*    Upgrade PHP from v5.4.31 to v5.4.33
+*    Roll out stronger default encryption settings for HTTPS as well as SSL connections used for FTP and email (SMTP, IMAP & POP3).
 
 This change to SSL settings **may** cause issues with older computers connecting to our services.  If you have any problems at all please contact us and we’ll find the best way forward.
 
